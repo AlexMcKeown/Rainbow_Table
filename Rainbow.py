@@ -63,7 +63,7 @@ def preImageFinder(desired_hash, password):
 def readFile():
     global wordlist, size # Global Variables Shared accross functions
     try:
-        #Q1 Read in the possible Passwords & report the number of read in words
+        # Read in the possible Passwords & report the number of read in words
         file_in = open(str(sys.argv[1]),"r") #OPEN file
         wordlist = file_in.read().splitlines()  # List of words
         file_in.close() # Close file
